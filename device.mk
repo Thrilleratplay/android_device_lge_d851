@@ -32,6 +32,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/gps.conf:system/etc/gps.conf
 
+# Add root
+PRODUCT_COPY_FILES += \
+	device/lge/d851/su:root/sbin/su
+
 # Wifi
 PRODUCT_PACKAGES += \
     libnetcmdiface
